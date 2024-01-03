@@ -1,0 +1,6 @@
+(define (fib n)
+    (define (fib-iter a b i)
+        (if (= i 0) b (fib-iter b (+ a b) (- i 1)))
+    )
+    (fib-iter 0 1 (- n 1))
+)
